@@ -7,6 +7,71 @@
   <title>Sweeetmart INDIA-</title>
 
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const loginForm = document.getElementById("login-form");
+
+      loginForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          
+          // Simple authentication logic (replace with your authentication process)
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          if (username === "user" && password === "pass") {
+              alert("Login successful!");
+          } else {
+              alert("Login failed. Please check your username and password.");
+          }
+      });
+  });
+</script>
+<script>
+  function signup() {
+      // Get form data
+      var username = document.getElementById('username').value;
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      // Validate form data (add more validation as needed)
+      if (!username || !email || !password) {
+          alert('Please fill in all fields');
+          return;
+      }
+
+      // Create an object with user data
+      var userData = {
+          username: username,
+          email: email,
+          password: password
+      };
+
+      // Send the data to the server (you can use AJAX or fetch for this)
+      // For demonstration purposes, we'll just log the data to the console
+      console.log('Signup data:', userData);
+
+      // You can also make an AJAX/fetch request to a server to handle signup
+      // Example using fetch:
+      /*
+      fetch('your_signup_api_url', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(userData),
+      })
+      .then(response => response.json())
+      .then(data => {
+          console.log('Signup successful', data);
+          // Handle success, redirect, or perform other actions
+      })
+      .catch(error => {
+          console.error('Error during signup', error);
+          // Handle errors
+      });
+      */
+  }
+</script>
 
 <body>
   <div>
@@ -25,6 +90,36 @@
 
   </h1>
   </div>
+
+
+  <div id="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+  </div>
+<div id="signup-container">
+  <h2>Sign Up</h2>
+  <form id="signupForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="signup()">Signup</button>
+</form>
+
+</div>
 
   <div class="Logo"><img src="laddoos.jpg" alt="Logo">
     <div>
@@ -104,7 +199,7 @@
           </div>
           <div class="" style="max-width: 800px; margin: 0 auto;">
             <iframe 
-              width="700px"
+              width="800px"
               height="500px"
             src="wassup.mp4"
                 frameborder="0" 
