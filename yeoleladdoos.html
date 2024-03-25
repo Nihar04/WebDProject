@@ -2,210 +2,177 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sweeetmart INDIA-</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>†YVL★</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        section {
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px; /* Adjust font size */
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Added styles for the form */
+        form {
+            max-width: 400px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+        }
+
+        .success {
+            color: green;
+            margin-top: 5px;
+        }
+    </style>
 </head>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const loginForm = document.getElementById("login-form");
-
-      loginForm.addEventListener("submit", function (event) {
-          event.preventDefault();
-          
-          // Simple authentication logic (replace with your authentication process)
-          const username = document.getElementById("username").value;
-          const password = document.getElementById("password").value;
-
-          if (username === "user" && password === "pass") {
-              alert("Login successful!");
-          } else {
-              alert("Login failed. Please check your username and password.");
-          }
-      });
-  });
-</script>
-<script>
-  function signup() {
-      // Get form data
-      var username = document.getElementById('username').value;
-      var email = document.getElementById('email').value;
-      var password = document.getElementById('password').value;
-
-      // Validate form data (add more validation as needed)
-      if (!username || !email || !password) {
-          alert('Please fill in all fields');
-          return;
-      }
-
-      // Create an object with user data
-      var userData = {
-          username: username,
-          email: email,
-          password: password
-      };
-
-      // Send the data to the server (you can use AJAX or fetch for this)
-      // For demonstration purposes, we'll just log the data to the console
-      console.log('Signup data:', userData);
-
-      // You can also make an AJAX/fetch request to a server to handle signup
-      // Example using fetch:
-      /*
-      fetch('your_signup_api_url', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(userData),
-      })
-      .then(response => response.json())
-      .then(data => {
-          console.log('Signup successful', data);
-          // Handle success, redirect, or perform other actions
-      })
-      .catch(error => {
-          console.error('Error during signup', error);
-          // Handle errors
-      });
-      */
-  }
-</script>
 
 <body>
-  <div>
-    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-      <div>
-        <h1>Delicacy Sweet Mart</h1>
-      </div>
-    </div>
-  </div>
-  <div class="Header" style="display: flex; flex-direction: row; align-items: center; justify-content: center;"></div>
-  <h1>
 
+    <header>
+        <h1>"Law$UIT"</h1>
+        <h2>(Defy. Laws. Of. Fashion)</h2>
+    </header>
 
-    <marquee behavior=scroll direction=right  r> 🙏सुस्वागतम🙏 🙏सुस्वागतम🙏 🙏सुस्वागतम🙏 🙏सुस्वागतम🙏 🙏सुस्वागतम🙏
-      🙏सुस्वागतम🙏 🙏सुस्वागतम🙏 🙏सुस्वागतम🙏</marquee>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Contact Us</a>
+    </nav>
 
-  </h1>
-  </div>
+    <section>
+        <h3>- The Backpack -</h3>
+        <p>select your put-ons</p>
 
-
-  <div id="login-container">
-    <h2>Login</h2>
-    <form id="login-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
-
-        <button type="submit">Login</button>
-    </form>
-  </div>
-<div id="signup-container">
-  <h2>Sign Up</h2>
-  <form id="signupForm">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-
-    <button type="button" onclick="signup()">Signup</button>
-</form>
-
-</div>
-
-  <div class="Logo"><img src="laddoos.jpg" alt="Logo">
-    <div>
-      <div class="Table of Contents">
-        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <div class="Logo"><img src="rickowenblack.jpg" alt="Logo">
+            <h4>Product 1</h4>
+            <p>...</p>
+            <p>...</p>
+            <button>Add to Cart</button>
         </div>
-        <div style="max-width: 800px; margin: 0 auto;">
-          <iframe 
-            width="580px"
-            height="330px"
-          src=""
-              frameborder="0" 
-              allowfullscreen
-          ></iframe>
-      </div>
 
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h5>Product 2</h5>
+            <p>...</p>
+            <p>...</p>
+            <button>Add to Cart</button>
+        </div>
 
-      <div class="table"></div>
-          <div>
-            <table border="1">
-              <thead>
-              <tbody>
-                <tr>
-                  <th>Sr.No</th>
-                  <th>Laddoos</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
+        <!-- Registration Form -->
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
 
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Raghavdas Laddoo</td>
-                  <td>1Kg</td>
-                  <td>₹600</td>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Dinka</td>
-                  <td>1Kg</td>
-                  <td>₹750</td>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Dry Fruit</td>
-                  <td>1Kg</td>
-                  <td>₹750</td>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Besan</td>
-                  <td>1Kg</td>
-                  <td>₹700</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Methi</td>
-                  <td>1Kg</td>
-                  <td>₹500</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Rava</td>
-                  <td>1Kg</td>
-                  <td>₹700</td>
-                </tr>
+            <button type="button" onclick="RegistrationForm.validate()">Register</button>
+            <div id="feedback"></div>
+        </form>
+    </section>
 
+    <footer>
+        <p style="font-size: 12px;">&copy; 2024 Yung Vamp Life Inc.</p> <!-- Adjust font size here -->
+    </footer>
 
-              </tbody>
-              </thead>
-            </table>
+    <script>
+        var RegistrationForm = {
+            validate: function() {
+                var fullName = document.getElementById('fullName').value;
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                var confirmPassword = document.getElementById('confirmPassword').value;
 
+                var errorElement = document.getElementById('feedback');
 
+                if (fullName === '' || email === '' || password === '' || confirmPassword === '') {
+                    errorElement.innerHTML = '
+    </script>
 
-          </div>
-          <div class="" style="max-width: 800px; margin: 0 auto;">
-            <iframe 
-              width="800px"
-              height="500px"
-            src="wassup.mp4"
-                frameborder="0" 
-                allowfullscreen
-            ></iframe>
-        
 </body>
 
 </html>
